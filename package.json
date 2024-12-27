@@ -38,7 +38,6 @@
   },
   "scripts": {
     "start": "cd src && ts-node index.ts",
-    "prepare": "npm install && npm run build",
     "example:node": "yarn build && cd ./example/node && ts-node -r ../../register.js main.ts",
     "example:project": "yarn build && ts-node -r ./register.js -P ./example/project/tsconfig.json ./example/project/main.ts",
     "example:api": "cd example/api && ts-node main.ts",
