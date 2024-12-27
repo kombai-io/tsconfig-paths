@@ -123,7 +123,7 @@ function findFirstExistingPath(
       tryPath.type === "index"
     ) {
       if (fileExists(tryPath.path)) {
-        return TryPath.getStrippedPath(tryPath);
+        return tryPath.path;
       }
     } else if (tryPath.type === "package") {
       const packageJson: Filesystem.PackageJson = readJson(tryPath.path);
